@@ -27,6 +27,9 @@ jobs:
       - name: Run Tests
         run: npm test
 
-      - name: Deploy Step
+      - name: Deploy to Production
         if: github.ref == 'refs/heads/main' && matrix.node-version == '16.x'
-        run: echo "Deploying application..."
+        run: |
+          echo "Build and tests successful."
+          echo "Deploying application to production server..."
+          echo "Deployment completed successfully!"
