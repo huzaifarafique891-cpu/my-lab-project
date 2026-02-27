@@ -29,3 +29,6 @@ jobs:
 
       - name: Deploy Step
         run: echo "Deploying application..."
+
+      - name: Use Secret Variable
+        run: echo "Using API key ${{ PRODUCTION_API_KEY }}"
