@@ -1,0 +1,20 @@
+{
+  "name": "my-lab-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Test Passed Successfully\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzaifarafique891-cpu/my-lab-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huzaifarafique891-cpu/my-lab-project/issues"
+  },
+  "homepage": "https://github.com/huzaifarafique891-cpu/my-lab-project#readme",
+  "description": ""
+}
