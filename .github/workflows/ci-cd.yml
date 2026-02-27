@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -28,7 +28,5 @@ jobs:
         run: npm test
 
       - name: Deploy Step
+        if: github.ref == 'refs/heads/main' && matrix.node-version == '16.x'
         run: echo "Deploying application..."
-
-      - name: Use Secret Variable
-        run: echo "Using API key ${{ PRODUCTION_API_KEY }}"
